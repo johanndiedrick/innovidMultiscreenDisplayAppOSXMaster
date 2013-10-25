@@ -1,6 +1,6 @@
-innovidMultiscreenDisplayApp
+OS X MASTER App for Innovid Multiscreen Display Project
 ============================
-This readme includes details and instructions for the Innovid Multiscreen Display MASTER app. 
+This readme includes details and instructions for the Innovid Multiscreen Display OSX MASTER app. 
 
 Version
 ----
