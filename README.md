@@ -24,7 +24,7 @@ we can use our Master computer to create our own computer-to-computer network fo
 
 * Wait a sec and your network should be setup. 
 
-* On your other devices, have them connect to this network, either throught the wifi drop-down on a Macbook or through Settings > Wi-Fi > Deviceson an iOS device
+* On your other devices, have them connect to this network, either throught the wifi drop-down on a Macbook or through Settings > Wi-Fi > Devices on an iOS device
 
 ### Loading Apps
 * Once your iOS device has connected, click on the info icon to get your devices IP address. You will need this info when loading the master app for sending/receiving OSC messages
