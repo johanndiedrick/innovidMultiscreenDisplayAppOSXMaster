@@ -29,11 +29,7 @@ we can use our Master computer to create our own computer-to-computer network fo
 ### Loading Apps
 * Once your iOS device has connected, click on the info icon to get your devices IP address. You will need this info when loading the master app for sending/receiving OSC messages
 
--enter it in when app loads
--give master computer/ios devices static ip
--need to find a solution for this that doesn't require recompiling app!
-
-* On the master computer, load the innovidVideoPlayerMasterDebug app with that IP address (could be done in a settings file or set up static IP, need a solution for this!)
+* On the master computer, load the innovidVideoPlayerMasterDebug app with that IP address (for now you need to recompile the app...could be done in a settings file or set up static IP or something you enter on the screen. either way there needs a solution for this!)
 
 * On the iOS devices, load their respective innovidVideoPlayerClient app
 
