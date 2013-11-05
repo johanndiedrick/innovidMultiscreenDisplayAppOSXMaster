@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidVideoPlayerMaster/src/main.cpp \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/main.cpp \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
@@ -169,7 +169,7 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofQTKitPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidVideoPlayerMaster/src/testApp.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h \
   /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOsc.h \
   ../../../addons/ofxOsc/src/ofxOscArg.h \
   ../../../addons/ofxOsc/src/ofxOscMessage.h \

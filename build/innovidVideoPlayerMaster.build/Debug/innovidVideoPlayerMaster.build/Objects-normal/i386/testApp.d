@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidVideoPlayerMaster/src/testApp.cpp \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidVideoPlayerMaster/src/testApp.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
