@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
@@ -170,18 +170,18 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofQTKitPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOsc.h \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOsc.h \
   ../../../addons/ofxOsc/src/ofxOscArg.h \
   ../../../addons/ofxOsc/src/ofxOscMessage.h \
   ../../../addons/ofxOsc/src/ofxOscSender.h \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h \
   ../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h \
   ../../../addons/ofxOsc/src/ofxOscBundle.h \
   ../../../addons/ofxOsc/src/ofxOscReceiver.h \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h \
   ../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h \
   ../../../addons/ofxOsc/libs/oscpack/src/osc/../ip/PacketListener.h \
-  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h \
+  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h \
   ../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h \
   ../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h

@@ -1,0 +1,775 @@
+TinnovidVideoPlayerMaster
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/Info.plist /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/openFrameworks-Info.plist
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/main.o /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscBundle.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscBundle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscMessage.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscMessage.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscParameterSync.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscParameterSync.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscReceiver.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscReceiver.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscSender.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscSender.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/IpEndpointName.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtils.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocket.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtilsWin.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/NetworkingUtilsWin.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocketWin.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/UdpSocketWin.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscOutboundPacketStream.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscPrintReceivedElements.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscReceivedElements.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscTypes.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug normal i386
+cPhaseScriptExecution Run\ Script /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+cPBXCp /Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glut/lib/osx/GLUT.framework bin/innovidVideoPlayerMasterDebug.app/Contents/Frameworks/GLUT.framework
+cTouch /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005243E79F00000000000000AA
+t1380181919
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000526932E1000000000000044C
+t1382626017
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000526932E100000000000001DB
+t1382626017
+s475
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000005267F84A0000000000019CF0
+t1382545482
+s105712
+
+N/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005267F76D00000000000065A0
+t1382545261
+s26016
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000005267F73600000000024991A0
+t1382545206
+s38375840
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000005267F739000000000000BC70
+t1382545209
+s48240
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005267F74000000000003E3C00
+t1382545216
+s4078592
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000005267F73E0000000000006B20
+t1382545214
+s27424
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000005267F73E00000000000066C0
+t1382545214
+s26304
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000005267F73F00000000000EFD70
+t1382545215
+s982384
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000005267F73B0000000000688550
+t1382545211
+s6849872
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000005267F743000000000000D730
+t1382545219
+s55088
+
+N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000005267F7430000000000080210
+t1382545219
+s524816
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000005267F74C0000000000141E90
+t1382545228
+s1318544
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000005267F752000000000002C960
+t1382545234
+s182624
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c000000005267F759000000000049E030
+t1382545241
+s4841520
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000005267FA2B0000000000322B80
+t1382545963
+s3287936
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp
+c000000005208D21A00000000000009AA
+t1376309786
+s2474
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp
+c000000005208D21A00000000000007B6
+t1376309786
+s1974
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp
+c000000005208D21A0000000000003D4B
+t1376309786
+s15691
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/NetworkingUtilsWin.cpp
+c000000005208D21A0000000000000BE8
+t1376309786
+s3048
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/UdpSocketWin.cpp
+c000000005208D21A0000000000003C39
+t1376309786
+s15417
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp
+c000000005208D21A0000000000003973
+t1376309786
+s14707
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp
+c000000005208D21A0000000000001B93
+t1376309786
+s7059
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp
+c000000005208D21A0000000000004562
+t1376309786
+s17762
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp
+c000000005208D21A000000000000063E
+t1376309786
+s1598
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscBundle.cpp
+c000000005208D21A00000000000007F8
+t1376309786
+s2040
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscMessage.cpp
+c000000005208D21A0000000000001929
+t1376309786
+s6441
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscParameterSync.cpp
+c000000005208D21A00000000000003C5
+t1376309786
+s965
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscReceiver.cpp
+c000000005208D21A0000000000001CC0
+t1376309786
+s7360
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscSender.cpp
+c000000005208D21A00000000000015A3
+t1376309786
+s5539
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app
+t1384106015
+s102
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/Frameworks/GLUT.framework
+t1384106015
+s204
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/Info.plist
+t1384106015
+s1123
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug
+t1384107108
+s8003256
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/PkgInfo
+t1384106015
+s8
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/IpEndpointName.o
+t1384106015
+s5140
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtils.o
+t1384106015
+s5812
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtilsWin.o
+t1384106015
+s1752
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscOutboundPacketStream.o
+t1384106015
+s45092
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscPrintReceivedElements.o
+t1384106015
+s89028
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscReceivedElements.o
+t1384106015
+s59800
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscTypes.o
+t1384106015
+s5688
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocket.o
+t1384106015
+s231568
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocketWin.o
+t1384106015
+s1740
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/innovidVideoPlayerMasterDebug.LinkFileList
+c00000000527FCC5E0000000000000D0F
+t1384107102
+s3343
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/main.o
+t1384106015
+s310820
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscBundle.o
+t1384106015
+s120024
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscMessage.o
+t1384106015
+s139472
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscParameterSync.o
+t1384106015
+s245728
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscReceiver.o
+t1384106015
+s273264
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscSender.o
+t1384106015
+s278216
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o
+t1384107103
+s326684
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c00000000527FC81F00000000000001A5
+t1384106015
+s421
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/openFrameworks-Info.plist
+c00000000527FC81F00000000000002A5
+t1384106015
+s677
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/main.cpp
+c00000000527FC81F000000000000015F
+t1384106015
+s351
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp
+c00000000527FCC17000000000000073A
+t1384107031
+s1850
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glut/lib/osx/GLUT.framework
+c000000005208D22A00000000000000CC
+t1376309802
+s204
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glut/lib/osx/GLUT.framework/GLUT
+c000000005208D22A0000000000093570
+t1376309802
+s603504
+
+N/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c00000000527FCC510000000002087A30
+t1384107089
+s34110000
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/NetworkingUtilsWin.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/UdpSocketWin.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscBundle.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscMessage.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscParameterSync.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscReceiver.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscSender.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/main.cpp
+r0
+
+CBuild AST from /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa1d713de0330b841^8cf723de0330b841^---0#1#1#--18"Check dependencies36"32036B54-2AD6-47F9-81A9-15A68BDFF9FC-
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/IpEndpointName.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtils.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtilsWin.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/NetworkingUtilsWin.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscOutboundPacketStream.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscPrintReceivedElements.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscReceivedElements.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscTypes.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocket.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocketWin.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/win32/UdpSocketWin.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/main.o /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/main.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscBundle.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscBundle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscMessage.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscMessage.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscParameterSync.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscParameterSync.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscReceiver.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscReceiver.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscSender.o /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscSender.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s405799902.141811
+e405799903.544100
+r1
+xCompileC
+xbuild/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o
+x/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/ofMain.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofConstants.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glew/include/GL/glew.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/tess2/include/tesselator.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofFileUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/File.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Foundation.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Config.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Platform.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Platform_POSIX.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Bugcheck.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Types.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Timestamp.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/File_UNIX.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofLog.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofTypes.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofColor.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofMath.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofPoint.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofVec3f.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofVec2f.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofVec4f.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Mutex.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Exception.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ScopedLock.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Mutex_POSIX.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofSystemUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofThread.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Thread.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Thread_POSIX.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Runnable.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SignalHandler.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Event.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Event_POSIX.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/RefCountedObject.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/AtomicCounter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/AutoPtr.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofURLFileLoader.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/events/ofEvents.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/events/ofEventUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/PriorityEvent.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/AbstractEvent.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SingletonHolder.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SharedPtr.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ActiveResult.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ActiveMethod.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ActiveRunnable.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ActiveStarter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ThreadPool.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/PriorityStrategy.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/NotificationStrategy.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/AbstractPriorityDelegate.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/AbstractDelegate.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/PriorityDelegate.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/PriorityExpire.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/FunctionPriorityDelegate.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/events/ofDelegate.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Condition.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/ScopedUnlock.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Path.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofBaseTypes.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofRectangle.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/3d/ofMesh.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofGLUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofPixels.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofMatrix4x4.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofQuaternion.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofXml.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/Document.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/XML.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/AbstractContainerNode.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/AbstractNode.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/Node.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/EventTarget.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/DOMObject.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/XMLString.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/NamespaceSupport.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/MutationEvent.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/Event.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/DocumentEvent.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/Element.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/Name.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/NamePool.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/AutoReleasePool.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/DocumentFragment.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/DOMParser.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/SAXParser.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/XMLReader.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/ParserEngine.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/expat.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/expat_external.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/XMLStream.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/Locator.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/TextEncoding.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/DOMException.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/XMLException.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/SAXException.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/XML/XMLWriter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/ContentHandler.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/LexicalHandler.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/SAX/DTDHandler.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/StreamConverter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/UnbufferedStreamBuf.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/StreamUtil.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/DOMWriter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/Attr.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/Text.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/CharacterData.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/NodeIterator.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/NodeFilter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/NamedNodeMap.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/ChildNodesList.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/DOM/NodeList.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofParameter.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/types/ofParameterGroup.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/include/Poco/Any.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofVectorMath.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/math/ofMatrix3x3.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/communication/ofSerial.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/communication/ofArduino.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofFbo.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofTexture.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofVboMesh.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofVbo.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofGLRenderer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofPolyline.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofGraphics.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/utils/ofMatrixStack.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofLight.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/3d/ofNode.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/3d/of3dUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/of3dGraphics.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/3d/of3dPrimitives.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofMaterial.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofShader.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/app/ofAppBaseWindow.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/gl/ofGLProgrammableRenderer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofCairoRenderer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/include/cairo/cairo-features.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/include/cairo/cairo-pdf.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/include/cairo/cairo.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/include/cairo/cairo-version.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/include/cairo/cairo-deprecated.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/include/cairo/cairo-svg.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofPath.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofTessellator.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofImage.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofRendererCollection.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/graphics/ofTrueTypeFont.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/app/ofBaseApp.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/app/ofAppRunner.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/sound/ofSoundStream.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/sound/ofBaseSoundStream.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/sound/ofRtAudioSoundStream.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/sound/ofSoundPlayer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/sound/ofBaseSoundPlayer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/sound/ofFmodSoundPlayer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/fmodex/include/fmod.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/fmodex/include/fmod_codec.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/fmodex/include/fmod_dsp.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/fmodex/include/fmod_memoryinfo.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/fmodex/include/fmod_errors.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/video/ofVideoGrabber.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/video/ofQTKitGrabber.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/video/ofVideoPlayer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/video/ofQTKitPlayer.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/3d/ofCamera.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworks/3d/ofEasyCam.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOsc.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscArg.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscMessage.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscSender.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscException.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscBundle.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOscReceiver.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h
+oclang: warning: -lpthread: 'linker' input unused
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp188"CompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilere46a24de0330b841^39b98bdf0330b841^-49"clang: warning: -lpthread: 'linker' input unused-0#0#1#-19%DVTDocumentLocation2@120"file:///Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp0000000000000000^4205"CompileC build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -g -mssse3 -Wno-sign-conversion -I/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/innovidVideoPlayerMasterDebug.hmap -I/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtAudio/include -I../../../libs/glfw/include -I../../../addons/ofxOsc/libs -I../../../addons/ofxOsc/libs/oscpack -I../../../addons/ofxOsc/libs/oscpack/src -I../../../addons/ofxOsc/libs/oscpack/src/ip -I../../../addons/ofxOsc/libs/oscpack/src/ip/posix -I../../../addons/ofxOsc/libs/oscpack/src/ip/win32 -I../../../addons/ofxOsc/libs/oscpack/src/osc -I../../../addons/ofxOsc/src -I/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/DerivedSources/i386 -I/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/DerivedSources -F/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin -F/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../libs/glut/lib/osx -D__MACOSX_CORE__ -lpthread -mtune=native -MMD -MT dependencies -MF /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.d --serialize-diagnostics /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.dia -c /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp -o /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o36"AE040F4F-69E5-41E4-BB16-4B52D462213C-
+bD5E26861-06C9-4685-B00F-5086C71C867B
+
+CLd /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug normal i386
+s405799903.546655
+e405799908.173206
+r1
+xLd
+x/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug
+xnormal
+xi386
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/innovidVideoPlayerMasterDebug.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/crt1.10.6.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/main.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/testApp.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscBundle.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscMessage.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscParameterSync.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscReceiver.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/ofxOscSender.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/IpEndpointName.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtils.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocket.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/NetworkingUtilsWin.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/UdpSocketWin.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscOutboundPacketStream.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscPrintReceivedElements.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscReceivedElements.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/OscTypes.o
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoCrypto.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoData.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoDataODBC.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoDataSQLite.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoFoundation.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoNet.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoNetSSL.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoUtil.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoXML.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/poco/lib/osx/PocoZip.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/tess2/lib/osx/tess2.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glew/lib/osx/glew.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/lib/osx/cairo-script-interpreter.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/lib/osx/cairo.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/cairo/lib/osx/pixman-1.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/fmodex/lib/osx/libfmodex.dylib
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/rtAudio/lib/osx/rtAudio.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openssl/lib/osx/crypto.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openssl/lib/osx/ssl.a
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glfw/lib/osx/libglfw3.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QTKit.framework/QTKit
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glut/lib/osx/GLUT.framework/GLUT
+d/Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AGL.framework/AGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Carbon
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuickTime.framework/QuickTime
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libstdc++.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libgcc_s.1.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/CarbonSound
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HTMLRendering.framework/Versions/A/HTMLRendering
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/NavigationServices.framework/Versions/A/NavigationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.A.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection185"Link /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug97"Ld bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug normal i3860c058cdf0330b841^15582ce40330b841^---0#0#1#--2769"Ld bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug normal i386    cd /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin -F/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin -F/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../libs/glut/lib/osx -filelist /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/innovidVideoPlayerMasterDebug.LinkFileList -mmacosx-version-min=10.6 -dead_strip ../../../libs/poco/lib/osx/PocoCrypto.a ../../../libs/poco/lib/osx/PocoData.a ../../../libs/poco/lib/osx/PocoDataODBC.a ../../../libs/poco/lib/osx/PocoDataSQLite.a ../../../libs/poco/lib/osx/PocoFoundation.a ../../../libs/poco/lib/osx/PocoNet.a ../../../libs/poco/lib/osx/PocoNetSSL.a ../../../libs/poco/lib/osx/PocoUtil.a ../../../libs/poco/lib/osx/PocoXML.a ../../../libs/poco/lib/osx/PocoZip.a ../../../libs/tess2/lib/osx/tess2.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo-script-interpreter.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/cairo/lib/osx/pixman-1.a ../../../libs/fmodex/lib/osx/libfmodex.dylib ../../../libs/rtAudio/lib/osx/rtAudio.a ../../../libs/openssl/lib/osx/crypto.a ../../../libs/openssl/lib/osx/ssl.a ../../../libs/glfw/lib/osx/libglfw3.a -framework Accelerate -framework QTKit -framework GLUT /Users/roopanew/Documents/of_v0.8.0_osx_release/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit -framework CoreVideo -Xlinker -dependency_info -Xlinker /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/innovidVideoPlayerMasterDebug_dependency_info.dat -o /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug36"26B9347C-45A1-46F6-88E3-7AF9FDBCAB94-
+bD5E26861-06C9-4685-B00F-5086C71C867B
+
+CPBXCp /Users/roopanew/Documents/of_v0.8.0_osx_release/libs/glut/lib/osx/GLUT.framework bin/innovidVideoPlayerMasterDebug.app/Contents/Frameworks/GLUT.framework
+r0
+
+CPhaseScriptExecution Run\ Script /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+s405799908.175164
+e405799908.539619
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'141"PhaseScriptExecution Run\ Script build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.shf2982de40330b841^3e268ae40330b841^---0#0#1#--30058"PhaseScriptExecution Run\ Script build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh    cd /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER roopanew    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv ARCHS_STANDARD_INCLUDING_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build    setenv BUILD_ROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin    setenv CACHE_ROOT /var/folders/7v/k_10vw8d32ncjpsqhcc8w9740000gp/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode    setenv CCHROOT /var/folders/7v/k_10vw8d32ncjpsqhcc8w9740000gp/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/7v/k_10vw8d32ncjpsqhcc8w9740000gp/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin    setenv CONFIGURATION_TEMP_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug    setenv CONTENTS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/innovidVideoPlayerMaster.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME innovidVideoPlayerMasterDebug.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin    setenv EMBEDDED_PROFILE_NAME embedded.provisionprofile    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME innovidVideoPlayerMasterDebug    setenv EXECUTABLE_PATH innovidVideoPlayerMasterDebug.app/Contents/MacOS/innovidVideoPlayerMasterDebug    setenv FILE_LIST /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin  \"/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME innovidVideoPlayerMasterDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING NONE    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS YES    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_GLFW "\"../../../libs/glfw/include\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtAudio/include\""    setenv HEADER_SEARCH_PATHS "/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/include \"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtAudio/include\" \"../../../libs/glfw/include\" ../../../addons/ofxOsc/libs ../../../addons/ofxOsc/libs/oscpack ../../../addons/ofxOsc/libs/oscpack/src ../../../addons/ofxOsc/libs/oscpack/src/ip ../../../addons/ofxOsc/libs/oscpack/src/ip/posix ../../../addons/ofxOsc/libs/oscpack/src/ip/win32 ../../../addons/ofxOsc/libs/oscpack/src/osc ../../../addons/ofxOsc/src"    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICON icon-debug.icns    setenv ICONV /usr/bin/iconv    setenv ICON_FILE ../../../libs/openFrameworksCompiled/project/osx/icon-debug.icns    setenv ICON_FILE_PATH ../../../libs/openFrameworksCompiled/project/osx/    setenv ICON_NAME_DEBUG icon-debug.icns    setenv ICON_NAME_RELEASE icon.icns    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH innovidVideoPlayerMasterDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH innovidVideoPlayerMasterDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/innovidVideoPlayerMaster.dst/Users/roopanew/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER roopanew    setenv INSTALL_PATH /Users/roopanew/Applications    setenv INSTALL_ROOT /tmp/innovidVideoPlayerMaster.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/innovidVideoPlayerMasterDebug_dependency_info.dat    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/innovidVideoPlayerMasterDebug-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin                                                              "    setenv LIB_CAIRO1 "\"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\""    setenv LIB_CAIRO2 "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_CAIRO3 "\"../../../libs/cairo/lib/osx/pixman-1.a\""    setenv LIB_FMODEX "\"../../../libs/fmodex/lib/osx/libfmodex.dylib\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/osx/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLFW "\"../../../libs/glfw/lib/osx/libglfw3.a\""    setenv LIB_GLUT "\"../../../libs/glut/lib/osx/GLUT.framework/Versions/A/GLUT\""    setenv LIB_OPENSSL1 "\"../../../libs/openssl/lib/osx/crypto.a\""    setenv LIB_OPENSSL2 "\"../../../libs/openssl/lib/osx/ssl.a\""    setenv LIB_POCO_1 "\"../../../libs/poco/lib/osx/PocoCrypto.a\""    setenv LIB_POCO_10 "\"../../../libs/poco/lib/osx/PocoZip.a\""    setenv LIB_POCO_2 "\"../../../libs/poco/lib/osx/PocoData.a\""    setenv LIB_POCO_3 "\"../../../libs/poco/lib/osx/PocoDataODBC.a\""    setenv LIB_POCO_4 "\"../../../libs/poco/lib/osx/PocoDataSQLite.a\""    setenv LIB_POCO_5 "\"../../../libs/poco/lib/osx/PocoFoundation.a\""    setenv LIB_POCO_6 "\"../../../libs/poco/lib/osx/PocoNet.a\""    setenv LIB_POCO_7 "\"../../../libs/poco/lib/osx/PocoNetSSL.a\""    setenv LIB_POCO_8 "\"../../../libs/poco/lib/osx/PocoUtil.a\""    setenv LIB_POCO_9 "\"../../../libs/poco/lib/osx/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal/i386/innovidVideoPlayerMasterDebug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 13A603    setenv MAC_OS_X_VERSION_ACTUAL 1090    setenv MAC_OS_X_VERSION_MAJOR 1090    setenv MAC_OS_X_VERSION_MINOR 0900    setenv MODULE_CACHE_DIR /Users/roopanew/Library/Developer/Xcode/DerivedData/ModuleCache    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Objects-normal    setenv OBJROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtAudio/include\" \"../../../libs/glfw/include\""    setenv OF_CORE_LIBS "\"../../../libs/poco/lib/osx/PocoCrypto.a\" \"../../../libs/poco/lib/osx/PocoData.a\" \"../../../libs/poco/lib/osx/PocoDataODBC.a\" \"../../../libs/poco/lib/osx/PocoDataSQLite.a\" \"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoNetSSL.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoZip.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\" \"../../../libs/openssl/lib/osx/crypto.a\" \"../../../libs/openssl/lib/osx/ssl.a\" \"../../../libs/glfw/lib/osx/libglfw3.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread -mtune=native"    setenv OTHER_LDFLAGS "\"../../../libs/poco/lib/osx/PocoCrypto.a\" \"../../../libs/poco/lib/osx/PocoData.a\" \"../../../libs/poco/lib/osx/PocoDataODBC.a\" \"../../../libs/poco/lib/osx/PocoDataSQLite.a\" \"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoNetSSL.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoZip.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\" \"../../../libs/openssl/lib/osx/crypto.a\" \"../../../libs/openssl/lib/osx/ssl.a\" \"../../../libs/glfw/lib/osx/libglfw3.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH innovidVideoPlayerMasterDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/PkgInfo    setenv PKGINFO_PATH innovidVideoPlayerMasterDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 5A2053    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME innovidVideoPlayerMasterDebug    setenv PRODUCT_SETTINGS_PATH /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT innovidVideoPlayerMaster    setenv PROJECT_DERIVED_FILE_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/DerivedSources    setenv PROJECT_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    setenv PROJECT_FILE_PATH /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/innovidVideoPlayerMaster.xcodeproj    setenv PROJECT_NAME innovidVideoPlayerMaster    setenv PROJECT_TEMP_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build    setenv PROJECT_TEMP_ROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build    setenv PUBLIC_HEADERS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk    setenv SDK_NAME macosx10.9    setenv SDK_PRODUCT_BUILD_VERSION 13A595    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/7v/k_10vw8d32ncjpsqhcc8w9740000gp/C/com.apple.DeveloperTools/5.0.1-5A2053/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    setenv SRCROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME innovidVideoPlayerMaster    setenv TARGET_BUILD_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin    setenv TARGET_NAME innovidVideoPlayerMaster    setenv TARGET_TEMP_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build    setenv TEMP_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build    setenv TEMP_FILES_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build    setenv TEMP_FILE_DIR /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build    setenv TEMP_ROOT /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 502    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER roopanew    setenv USER_APPS_DIR /Users/roopanew/Applications    setenv USER_LIBRARY_DIR /Users/roopanew/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH innovidVideoPlayerMasterDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER roopanew    setenv VERSION_INFO_FILE innovidVideoPlayerMasterDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:innovidVideoPlayerMasterDebug  PROJECT:innovidVideoPlayerMaster-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME innovidVideoPlayerMasterDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 5A2053    setenv XCODE_VERSION_ACTUAL 0501    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH innovidVideoPlayerMasterDebug.app/Contents/XPCServices    setenv YACC yacc    setenv arch i386    setenv variant normal    /bin/sh -c /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/build/innovidVideoPlayerMaster.build/Debug/innovidVideoPlayerMaster.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh36"61A44F77-5096-4D3F-98A0-23839D7AF0E4-
+bD5E26861-06C9-4685-B00F-5086C71C867B
+
+CProcessInfoPlistFile /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app/Contents/Info.plist /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/openFrameworks-Info.plist
+r0
+
+CTouch /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app
+s405799908.540691
+e405799908.546223
+r1
+xTouch
+x/Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Touch /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app43"Touch bin/innovidVideoPlayerMasterDebug.app60778ae40330b841^c7d68be40330b841^---0#0#1#--307"Touch bin/innovidVideoPlayerMasterDebug.app    cd /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster    /usr/bin/touch -c /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/bin/innovidVideoPlayerMasterDebug.app36"B31B3774-E14D-4619-A7A7-AB1BAEE01B6E-
+bD5E26861-06C9-4685-B00F-5086C71C867B
+

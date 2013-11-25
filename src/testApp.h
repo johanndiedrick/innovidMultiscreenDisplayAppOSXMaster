@@ -3,7 +3,9 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 
-#define HOST "169.254.185.165"
+#define HOST "169.254.113.109"
+#define HOST2 "169.254.77.75"
+#define HOST3 "169.254.147.227"
 #define PORT 12345
 
 class testApp : public ofBaseApp{
@@ -29,6 +31,8 @@ class testApp : public ofBaseApp{
     
         //osc sender
         ofxOscSender sender;
+        ofxOscSender sender2;
+        ofxOscSender sender3;
     
 		
 };
