@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.cpp \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/src/testApp.h \
   ../../../libs/openFrameworks/ofMain.h \
   ../../../libs/openFrameworks/utils/ofConstants.h \
   ../../../libs/glew/include/GL/glew.h \
@@ -170,18 +170,67 @@ dependencies: \
   ../../../libs/openFrameworks/video/ofQTKitPlayer.h \
   ../../../libs/openFrameworks/3d/ofCamera.h \
   ../../../libs/openFrameworks/3d/ofEasyCam.h \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOsc.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/src/ofxOsc.h \
   ../../../addons/ofxOsc/src/ofxOscArg.h \
   ../../../addons/ofxOsc/src/ofxOscMessage.h \
   ../../../addons/ofxOsc/src/ofxOscSender.h \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h \
   ../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h \
   ../../../addons/ofxOsc/src/ofxOscBundle.h \
   ../../../addons/ofxOsc/src/ofxOscReceiver.h \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h \
   ../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h \
   ../../../addons/ofxOsc/libs/oscpack/src/osc/../ip/PacketListener.h \
-  /Users/roopanew/Documents/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h \
   ../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h \
-  ../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h
+  ../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUI.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIOFWrapper.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxXmlSettings/src/ofxXmlSettings.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/addons/ofxXmlSettings/libs/tinyxml.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIUtils.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIRectangle.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIWidget.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIWidgetWithLabel.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIEventArgs.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUILabel.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIFPS.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUISlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIMultiImageSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIImageSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIFPSSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIMinimalSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUICircleSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIBiLabelSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIRangeSlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIToggle.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIButton.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUICustomImageButton.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIMultiImageButton.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIMultiImageToggle.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIRadio.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUI2DPad.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUI2DGraph.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUITextInput.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUITextArea.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUINumberDialer.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUILabelButton.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUILabelToggle.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIToggleMatrix.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIImageButton.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIImageToggle.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIRotarySlider.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUISpacer.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIDropDownList.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIWaveform.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUISpectrum.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIMovingGraph.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIValuePlotter.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIImage.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIBaseDraws.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIImageSampler.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUICanvas.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUIScrollableCanvas.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUISuperCanvas.h \
+  /Users/johanndiedrick/Documents/OpenFrameworks/of_v0.8.0_osx_release/apps/myApps/innovidMultiscreenDisplayAppOSXMaster/../../../addons/ofxUI/src/ofxUITabBar.h

@@ -1,0 +1,20 @@
+<Widget>
+    <Kind>12</Kind>
+    <Name>iPhone IP</Name>
+    <Value>169.254.84.46</Value>
+</Widget>
+<Widget>
+    <Kind>12</Kind>
+    <Name>OS X IP</Name>
+    <Value>169.254.149.197</Value>
+</Widget>
+<Widget>
+    <Kind>12</Kind>
+    <Name>iPad IP</Name>
+    <Value>169.254.34.169</Value>
+</Widget>
+<Widget>
+    <Kind>2</Kind>
+    <Name>SEND OSC</Name>
+    <Value>1</Value>
+</Widget>

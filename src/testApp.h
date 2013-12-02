@@ -2,10 +2,13 @@
 
 #include "ofMain.h"
 #include "ofxOsc.h"
+#include "ofxUI.h"
 
+/*
 #define HOST "169.254.113.109"
 #define HOST2 "169.254.77.75"
 #define HOST3 "169.254.147.227"
+ */
 #define PORT 12345
 
 class testApp : public ofBaseApp{
@@ -14,7 +17,11 @@ class testApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
-
+        void setupOSC();
+        void setupVideo();
+        void drawDebug();
+        void setupUI();
+    
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );
@@ -30,9 +37,24 @@ class testApp : public ofBaseApp{
         int count;
     
         //osc sender
-        ofxOscSender sender;
-        ofxOscSender sender2;
-        ofxOscSender sender3;
+        ofxOscSender iPadSender;
+        ofxOscSender iPhoneSender;
+        ofxOscSender osxSender;
+    
+        string iPadIP;
+        string iPhoneIP;
+        string osxIP;
+    
+        bool sendOSC;
+    
+        //ofx ui
+        ofxUICanvas *gui;
+        void exit();
+        void guiEvent(ofxUIEventArgs &e);
+    
+        //draw debug
+        bool debug;
+
     
 		
 };
