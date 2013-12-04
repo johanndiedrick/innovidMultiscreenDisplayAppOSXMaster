@@ -268,7 +268,7 @@ void testApp::guiEvent(ofxUIEventArgs &e)
         cout << output << endl;
     }
     
-    else if(name == "SEND OSC")
+    else if(name == "Sync Video")
     {
         ofxUIToggle *toggle = (ofxUIToggle *) e.widget;
         setupOSC();
