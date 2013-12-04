@@ -35,7 +35,7 @@ class testApp : public ofBaseApp{
     
         //video player
         ofVideoPlayer player;
-    bool switchVideo;
+        bool switchVideo;
         int count;
     
         //osc sender

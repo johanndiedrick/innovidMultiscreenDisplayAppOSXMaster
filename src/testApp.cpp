@@ -33,6 +33,7 @@ void testApp::update(){
     ofxOscMessage m;
     m.setAddress( "/movie/position" );
     m.addFloatArg(p);
+    m.addIntArg(debug);
     
 	// Broadcast current position information of movie
 	if ((count % 20 == 0)) {
@@ -46,6 +47,7 @@ void testApp::update(){
 	count++;
     }
     
+    /*
     if(switchVideo == false){
     if (player.getPosition() == 1.0){
         switchVideo = true;
@@ -62,7 +64,14 @@ void testApp::update(){
         //play another movie
         player.play();
         
+        cout << "sending message to switch to fingers movie " << endl;
+        
         //send message to other players to stop, load, and play new movie
+        ofxOscMessage n;
+        n.setAddress( "/movie/current" );
+        n.addFloatArg(2);
+        osxSender.sendMessage(n);
+
         
         //send sending osc
         //also toggle gui
@@ -86,13 +95,20 @@ void testApp::update(){
             //play another movie
             player.play();
             
+            cout << "sending message to switch to macbook movie " << endl;
+
             //send message to other players to stop, load, and play new movie
+            ofxOscMessage o;
+            o.setAddress( "/movie/current" );
+            o.addFloatArg(1);
+            osxSender.sendMessage(o);
             
             //send sending osc
             //also toggle gui
             sendOSC = !sendOSC;
         }
     }
+     */
 }
 
 //--------------------------------------------------------------
@@ -170,7 +186,7 @@ void testApp::setupUI()
     gui->addTextInput("OS X IP", "Macbook Pro/Mac Mini IP Address", 10)->setAutoClear(false);
     gui->addTextInput("iPad IP", "iPad IP Address", 10)->setAutoClear(false);
 	gui->setWidgetFontSize(OFX_UI_FONT_MEDIUM);
-    gui->addWidgetDown(new ofxUIToggle(32, 32, false, "SEND OSC"));
+    gui->addWidgetDown(new ofxUIToggle(32, 32, false, "Sync Video"));
     ofAddListener(gui->newGUIEvent, this, &testApp::guiEvent);
     gui->toggleVisible();
     gui->loadSettings("GUI/guiSettings.xml");
@@ -254,7 +270,6 @@ void testApp::guiEvent(ofxUIEventArgs &e)
     
     else if(name == "SEND OSC")
     {
-        cout << "sending osc" << endl;
         ofxUIToggle *toggle = (ofxUIToggle *) e.widget;
         setupOSC();
         sendOSC = toggle->getValue();

@@ -11,10 +11,10 @@
 <Widget>
     <Kind>12</Kind>
     <Name>iPad IP</Name>
-    <Value>169.254.34.169</Value>
+    <Value>169.254.138.123</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
-    <Name>SEND OSC</Name>
+    <Name>Sync Video</Name>
     <Value>0</Value>
 </Widget>
