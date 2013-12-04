@@ -32,8 +32,10 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+    
         //video player
         ofVideoPlayer player;
+    bool switchVideo;
         int count;
     
         //osc sender

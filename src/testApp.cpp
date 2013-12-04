@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    
+    switchVideo = false;
     //setup initial ip addresses
     iPadIP = "";
     iPhoneIP = "";
@@ -45,7 +45,54 @@ void testApp::update(){
     iPhoneSender.sendMessage(m); // send every frame for ipad
 	count++;
     }
-
+    
+    if(switchVideo == false){
+    if (player.getPosition() == 1.0){
+        switchVideo = true;
+        //stop sending osc
+        //also toggle gui
+        sendOSC = !sendOSC;
+        
+        //stop movie
+        player.stop();
+        
+        //load in another movie
+        player.loadMovie("movies/fingers.mov");
+        
+        //play another movie
+        player.play();
+        
+        //send message to other players to stop, load, and play new movie
+        
+        //send sending osc
+        //also toggle gui
+        sendOSC = !sendOSC;
+    }
+    }
+    
+    if(switchVideo == true){
+        if (player.getPosition() == 1.0){
+            switchVideo = false;
+            //stop sending osc
+            //also toggle gui
+            sendOSC = !sendOSC;
+            
+            //stop movie
+            player.stop();
+            
+            //load in another movie
+            player.loadMovie("movies/1124-macbook.mov");
+            
+            //play another movie
+            player.play();
+            
+            //send message to other players to stop, load, and play new movie
+            
+            //send sending osc
+            //also toggle gui
+            sendOSC = !sendOSC;
+        }
+    }
 }
 
 //--------------------------------------------------------------
@@ -84,6 +131,10 @@ void testApp::drawDebug(){
     ofDrawBitmapString("iPhone IP: " + iPhoneIP,50,90);
     ofDrawBitmapString("OSX Client IP: "+ osxIP, 50,110);
     ofDrawBitmapString("iPad IP: " + iPadIP ,50,130);
+    ofDrawBitmapString("Currently playing: " + player.getMoviePath() ,50,150);
+    ofDrawBitmapString("Sending OSC?: " + ofToString(sendOSC) ,50,170);
+
+    
 
     
 }
@@ -112,7 +163,7 @@ void testApp::exit()
 
 void testApp::setupUI()
 {
-	gui = new ofxUICanvas(50, 150, 320, 320);
+	gui = new ofxUICanvas(50, 190, 320, 320);
     gui->addWidgetDown(new ofxUILabel("IP Addresses", OFX_UI_FONT_LARGE));
 	gui->setWidgetFontSize(OFX_UI_FONT_LARGE);
 	gui->addTextInput("iPhone IP", "iPhone IP Address", 10)->setAutoClear(false);
