@@ -12,7 +12,7 @@ void testApp::setup(){
     
     count = 0;
     
-    debug = true;
+    debug = false;
     sendOSC = false;
     
     setupUI();
@@ -96,9 +96,8 @@ void testApp::keyPressed(int key){
     }
     
     if(key=='d'){
-        
-        printf("drawing debug");
         debug = !debug;
+        gui->toggleVisible();
     }
 
 }
@@ -122,6 +121,7 @@ void testApp::setupUI()
 	gui->setWidgetFontSize(OFX_UI_FONT_MEDIUM);
     gui->addWidgetDown(new ofxUIToggle(32, 32, false, "SEND OSC"));
     ofAddListener(gui->newGUIEvent, this, &testApp::guiEvent);
+    gui->toggleVisible();
     gui->loadSettings("GUI/guiSettings.xml");
 }
 //--------------------------------------------------------------
