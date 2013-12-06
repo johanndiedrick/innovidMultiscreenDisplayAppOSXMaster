@@ -18,6 +18,8 @@ void testApp::setup(){
     setupUI();
     setupVideo();
     
+    CGDisplayHideCursor(NULL);
+    
 }
 
 //--------------------------------------------------------------
@@ -36,7 +38,7 @@ void testApp::update(){
     m.addIntArg(debug);
     
 	// Broadcast current position information of movie
-	if ((count % 20 == 0)) {
+	if ((count % 100 == 0)) {
 
 		osxSender.sendMessage(m); // send slower for macbook
 
@@ -140,6 +142,10 @@ void testApp::setupVideo(){
 //--------------------------------------------------------------
 
 void testApp::drawDebug(){
+    
+    //show cursor
+    CGDisplayShowCursor(NULL);
+    
     //draw some debug shit on screen
     
     ofDrawBitmapString("frame: " + ofToString(player.getCurrentFrame()) + "/"+ofToString(player.getTotalNumFrames()),50,50);
