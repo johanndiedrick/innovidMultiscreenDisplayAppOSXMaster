@@ -46,6 +46,14 @@ Links to related repositories
 ----
 [iPhone CLIENT]
 
+[OS X CLIENT]
+
+[iPAD CLIENT]
+
+[OS X CLIENT]: https://github.com/jdiedrick/innovidMultiscreenDisplayAppOSXClient
+
 [iPhone CLIENT]: https://github.com/jdiedrick/innovidMultiscreenDisplayAppiPhoneClient
+
+[iPad CLIENT]: https://github.com/jdiedrick/innovidMultiscreenDisplayAppiPadClient
 
 [Innovid Dropbox]: https://www.dropbox.com/home/Innovid
