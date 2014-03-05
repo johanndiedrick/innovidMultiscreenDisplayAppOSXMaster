@@ -1,7 +1,7 @@
 <Widget>
     <Kind>12</Kind>
     <Name>iPhone IP</Name>
-    <Value>169.254.84.46</Value>
+    <Value>169.254.92.84</Value>
 </Widget>
 <Widget>
     <Kind>12</Kind>
@@ -11,10 +11,10 @@
 <Widget>
     <Kind>12</Kind>
     <Name>iPad IP</Name>
-    <Value>169.254.138.123</Value>
+    <Value>169.254.86.121</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
     <Name>Sync Video</Name>
-    <Value>0</Value>
+    <Value>1</Value>
 </Widget>

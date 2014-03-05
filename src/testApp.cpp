@@ -20,6 +20,9 @@ void testApp::setup(){
     
     CGDisplayHideCursor(NULL);
     
+    //get json
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -136,7 +139,7 @@ void testApp::setupOSC(){
 void testApp::setupVideo(){
     
     //load movie and start playing
-    player.loadMovie("movies/1124-macbook.mov");
+    player.loadMovie("movies/macbook.mov");
     player.play();
 }
 //--------------------------------------------------------------

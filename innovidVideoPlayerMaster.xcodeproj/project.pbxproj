@@ -97,6 +97,26 @@
 		81967292BFC87A0144BD32C6 /* ofxOscSender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscSender.cpp; path = ../../../addons/ofxOsc/src/ofxOscSender.cpp; sourceTree = SOURCE_ROOT; };
 		8B30E93FD3D3475EED522A0E /* ofxOscBundle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscBundle.h; path = ../../../addons/ofxOsc/src/ofxOscBundle.h; sourceTree = SOURCE_ROOT; };
 		8C75AFC8774A62495DD53464 /* ofxOscReceiver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscReceiver.h; path = ../../../addons/ofxOsc/src/ofxOscReceiver.h; sourceTree = SOURCE_ROOT; };
+		8E9F622018C6E42300226D60 /* autolink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		8E9F622118C6E42300226D60 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		8E9F622218C6E42300226D60 /* features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		8E9F622318C6E42300226D60 /* forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		8E9F622418C6E42300226D60 /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		8E9F622518C6E42300226D60 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		8E9F622618C6E42300226D60 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		8E9F622718C6E42300226D60 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		8E9F622918C6E42300226D60 /* json_batchallocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		8E9F622A18C6E42300226D60 /* json_internalarray.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		8E9F622B18C6E42300226D60 /* json_internalmap.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		8E9F622C18C6E42300226D60 /* json_reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		8E9F622D18C6E42300226D60 /* json_tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_tool.h; sourceTree = "<group>"; };
+		8E9F622E18C6E42300226D60 /* json_value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		8E9F622F18C6E42300226D60 /* json_valueiterator.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		8E9F623018C6E42300226D60 /* json_writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		8E9F623118C6E42300226D60 /* sconscript */ = {isa = PBXFileReference; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
+		8E9F623218C6E42300226D60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8E9F623418C6E42300226D60 /* ofxJSONElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxJSONElement.cpp; sourceTree = "<group>"; };
+		8E9F623518C6E42300226D60 /* ofxJSONElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxJSONElement.h; sourceTree = "<group>"; };
 		8ECDD860184BF36000C344D0 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		8ECDD862184BF36000C344D0 /* ofxUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxUI.h; sourceTree = "<group>"; };
 		8ECDD863184BF36000C344D0 /* ofxUI2DGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxUI2DGraph.h; sourceTree = "<group>"; };
@@ -264,6 +284,82 @@
 			name = oscpack;
 			sourceTree = "<group>";
 		};
+		8E9F61AF18C6E42100226D60 /* ofxJSON */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F621C18C6E42300226D60 /* libs */,
+				8E9F623218C6E42300226D60 /* README.md */,
+				8E9F623318C6E42300226D60 /* src */,
+			);
+			name = ofxJSON;
+			path = ../../../addons/ofxJSON;
+			sourceTree = "<group>";
+		};
+		8E9F621C18C6E42300226D60 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F621D18C6E42300226D60 /* jsoncpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		8E9F621D18C6E42300226D60 /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F621E18C6E42300226D60 /* include */,
+				8E9F622818C6E42300226D60 /* src */,
+			);
+			path = jsoncpp;
+			sourceTree = "<group>";
+		};
+		8E9F621E18C6E42300226D60 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F621F18C6E42300226D60 /* json */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8E9F621F18C6E42300226D60 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F622018C6E42300226D60 /* autolink.h */,
+				8E9F622118C6E42300226D60 /* config.h */,
+				8E9F622218C6E42300226D60 /* features.h */,
+				8E9F622318C6E42300226D60 /* forwards.h */,
+				8E9F622418C6E42300226D60 /* json.h */,
+				8E9F622518C6E42300226D60 /* reader.h */,
+				8E9F622618C6E42300226D60 /* value.h */,
+				8E9F622718C6E42300226D60 /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		8E9F622818C6E42300226D60 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F622918C6E42300226D60 /* json_batchallocator.h */,
+				8E9F622A18C6E42300226D60 /* json_internalarray.inl */,
+				8E9F622B18C6E42300226D60 /* json_internalmap.inl */,
+				8E9F622C18C6E42300226D60 /* json_reader.cpp */,
+				8E9F622D18C6E42300226D60 /* json_tool.h */,
+				8E9F622E18C6E42300226D60 /* json_value.cpp */,
+				8E9F622F18C6E42300226D60 /* json_valueiterator.inl */,
+				8E9F623018C6E42300226D60 /* json_writer.cpp */,
+				8E9F623118C6E42300226D60 /* sconscript */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8E9F623318C6E42300226D60 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8E9F623418C6E42300226D60 /* ofxJSONElement.cpp */,
+				8E9F623518C6E42300226D60 /* ofxJSONElement.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		8ECDD5C0184BF34B00C344D0 /* ofxUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +466,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				8E9F61AF18C6E42100226D60 /* ofxJSON */,
 				8ECDD8EF184BFA5300C344D0 /* ofxXmlSettings */,
 				8ECDD5C0184BF34B00C344D0 /* ofxUI */,
 				E6053AB7FEC63D5F83825B88 /* ofxOsc */,
