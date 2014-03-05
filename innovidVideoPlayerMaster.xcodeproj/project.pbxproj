@@ -17,6 +17,10 @@
 		67FE4C7B15C2F0478C8126C2 /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B361208CD4107E479F04E7B /* NetworkingUtils.cpp */; };
 		72A929D3561B8232A182ABFC /* ofxOscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65EEFA3DA3526E9CDD9C21F9 /* ofxOscBundle.cpp */; };
 		879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9BFFBBF4CC43DEE890B3C3E /* OscTypes.cpp */; };
+		8E9F624E18C6E76E00226D60 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F622C18C6E42300226D60 /* json_reader.cpp */; };
+		8E9F624F18C6E76E00226D60 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F622E18C6E42300226D60 /* json_value.cpp */; };
+		8E9F625018C6E76E00226D60 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F623018C6E42300226D60 /* json_writer.cpp */; };
+		8E9F625118C6E76E00226D60 /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F623418C6E42300226D60 /* ofxJSONElement.cpp */; };
 		8ECDD8F8184BFA5300C344D0 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD8F1184BFA5300C344D0 /* tinyxml.cpp */; };
 		8ECDD8F9184BFA5300C344D0 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD8F3184BFA5300C344D0 /* tinyxmlerror.cpp */; };
 		8ECDD8FA184BFA5300C344D0 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8ECDD8F4184BFA5300C344D0 /* tinyxmlparser.cpp */; };
@@ -692,6 +696,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9F624E18C6E76E00226D60 /* json_reader.cpp in Sources */,
+				8E9F624F18C6E76E00226D60 /* json_value.cpp in Sources */,
+				8E9F625018C6E76E00226D60 /* json_writer.cpp in Sources */,
+				8E9F625118C6E76E00226D60 /* ofxJSONElement.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				72A929D3561B8232A182ABFC /* ofxOscBundle.cpp in Sources */,

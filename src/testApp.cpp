@@ -21,6 +21,13 @@ void testApp::setup(){
     CGDisplayHideCursor(NULL);
     
     //get json
+    std::string url = "http://stormy-badlands-2316.herokuapp.com/data";
+    
+    if (!response.open(url)) {
+		cout  << "Failed to parse JSON\n" << endl;
+	}else{
+        cout << response.getRawString() << endl;
+    }
     
     
 }

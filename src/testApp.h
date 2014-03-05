@@ -3,6 +3,9 @@
 #include "ofMain.h"
 #include "ofxOsc.h"
 #include "ofxUI.h"
+#include "ofxJSONElement.h"
+
+
 
 /*
 #define HOST "169.254.113.109"
@@ -32,6 +35,9 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+        //json for videos
+        ofxJSONElement  response;
+
     
         //video player
         ofVideoPlayer player;
