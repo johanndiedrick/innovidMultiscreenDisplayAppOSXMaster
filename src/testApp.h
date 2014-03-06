@@ -25,6 +25,9 @@ class testApp : public ofBaseApp{
         void drawDebug();
         void setupUI();
     
+        //downloading videos
+        void downloadVideos();
+    
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );

@@ -1,5 +1,20 @@
 #include "testApp.h"
 
+string ofSystemCall(string command)
+{
+    FILE* pipe = popen(command.c_str(), "r");
+    if (!pipe) return "ERROR";
+    char buffer[128];
+    string result = "";
+    while(!feof(pipe)) {
+        if(fgets(buffer, 128, pipe) != NULL)
+            result += buffer;
+    }
+    pclose(pipe);
+    result.erase(remove(result.begin(), result.end(), '\n'), result.end());
+    return result;
+}
+
 //--------------------------------------------------------------
 void testApp::setup(){
     switchVideo = false;
@@ -165,6 +180,28 @@ void testApp::drawDebug(){
     ofDrawBitmapString("iPad IP: " + iPadIP ,50,130);
     ofDrawBitmapString("Currently playing: " + player.getMoviePath() ,50,150);
     ofDrawBitmapString("Sending OSC?: " + ofToString(sendOSC) ,50,170);
+    
+    //draw json shit to the screen
+    std::stringstream ss;
+    
+    ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
+    
+    for (int i=0; i<response["videos"].size(); i++){
+        ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
+        << "\n"
+        << "title: "
+        << response["videos"][i]["title"].asString()
+        << "\n"
+        << "filename: "
+        << response["videos"][i]["filename"].asString()
+        << "\n"
+        << "timestamp: "
+        <<  response["videos"][i]["timestamp"].asString()
+        << "\n"
+        << endl;
+    }
+    
+    ofDrawBitmapString(ss.str(), ofGetWidth()/2, 50);
 
     
 
@@ -203,6 +240,7 @@ void testApp::setupUI()
     gui->addTextInput("iPad IP", "iPad IP Address", 10)->setAutoClear(false);
 	gui->setWidgetFontSize(OFX_UI_FONT_MEDIUM);
     gui->addWidgetDown(new ofxUIToggle(32, 32, false, "Sync Video"));
+    gui->addButton("Download videos", false, 44, 44);
     ofAddListener(gui->newGUIEvent, this, &testApp::guiEvent);
     gui->toggleVisible();
     gui->loadSettings("GUI/guiSettings.xml");
@@ -291,7 +329,35 @@ void testApp::guiEvent(ofxUIEventArgs &e)
         sendOSC = toggle->getValue();
     }
     
+    else if(name == "Download videos")
+    {
+        ofxUIButton *button = (ofxUIButton *) e.widget;
+        //setupOSC();
+        //sendOSC = toggle->getValue();
+        if(button->getValue() == 1){
+            downloadVideos();
+        }
+        //cout << name << "\t value: " << button->getValue() << endl;
+        
+    }
     
+    
+    
+}
+
+//--------------------------------------------------------------
+void testApp::downloadVideos(){
+    cout << "downloading videos" << endl;
+    //string curl_dl = ofToDataPath("curl", true);
+    
+    for (int i=0; i<response["videos"].size(); i++){
+        string video_url = response["videos"][i]["link"].asString();
+        string video_filename = response["videos"][i]["filename"].asString();
+        string video_final_path = ofToDataPath(video_filename, true);
+        cout << video_url << endl;
+        string command = "curl -o "+video_final_path+ " " + video_url;
+        ofSystemCall(command);
+    }
 }
 
 //--------------------------------------------------------------
