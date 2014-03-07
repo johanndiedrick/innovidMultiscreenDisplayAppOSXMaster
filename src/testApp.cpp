@@ -38,6 +38,9 @@ void testApp::setup(){
     
     gotJSON = false;
     
+    //load json
+    loadJSON();
+    
     ss << "No video information received yet" << endl;
     
     
@@ -123,18 +126,6 @@ void testApp::keyPressed(int key){
     if(key=='d'){
         debug = !debug;
         gui->toggleVisible();
-    }
-    
-    if(key=='1'){
-        ddl->addToggle("NEW TOGGLE");
-    }
-    
-    if(key=='2'){
-        ddl->removeToggle("NEW TOGGLE");
-    }
-    
-    if(key=='3'){
-        ddl->clearToggles();
     }
 }
 //--------------------------------------------------------------
@@ -300,6 +291,84 @@ void testApp::downloadVideos(){
     }
 }
 
+
+//--------------------------------------------------------------
+void testApp::loadJSON(){
+
+    //if json isn't there
+    ofFile json;
+    string json_file_path = "json/innovid_videos.json";
+    if ( !json.doesFileExist(ofToDataPath(json_file_path, true)) ) {
+
+        //download, save and load json
+        //this is done on the ui now by hitting the update json button.
+        //could do automatically, but maybe not good if you're not online
+
+        cout << "json file doesn't exist, lets try to download it" << endl;
+        
+    }else if( json.doesFileExist(ofToDataPath(json_file_path, true)) ){
+        
+        //else, load saved json
+        
+        cout << "json file exists, lets load it!!!" << endl;
+        std::string file = "json/innovid_videos.json";
+        
+        // Now parse the JSON
+        bool parsingSuccessful = response.open(file);
+        
+        if (parsingSuccessful) {
+            cout << "loaded json successfully" << endl;
+            cout << response.getRawString() << endl;
+            //update our dropdown box with the videos
+            
+            //update string stream w json data
+            ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
+            
+            for (int i=0; i<response["videos"].size(); i++){
+                ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
+                << "\n"
+                << "title: "
+                << response["videos"][i]["title"].asString()
+                << "\n"
+                << "filename: "
+                << response["videos"][i]["filename"].asString()
+                << "\n"
+                << "timestamp: "
+                <<  response["videos"][i]["timestamp"].asString()
+                << "\n"
+                << endl;
+            }
+
+            
+            
+            for (int i=0; i<response["videos"].size(); i++){
+                ddl->addToggle(response["videos"][i]["filename"].asString());
+            }
+            /*
+            // now write pretty print
+            if(!result.save("example_output_pretty.json",true)) {
+                cout << "example_output_pretty.json written unsuccessfully." << endl;
+            } else {
+                cout << "example_output_pretty.json written successfully." << endl;
+            }
+            
+            // now write without pretty print
+            if(!result.save("example_output_fast.json",false)) {
+                cout << "example_output_pretty.json written unsuccessfully." << endl;
+            } else {
+                cout << "example_output_pretty.json written successfully." << endl;
+            }
+            */
+        } else {
+            cout  << "Failed to parse JSON" << endl;
+        }
+    }
+    
+
+}
+
+//--------------------------------------------------------------
+
 void testApp::getJSON(){
     cout << "Getting JSON..." << endl;
     ss.str(std::string()); // clear string stream
@@ -315,6 +384,13 @@ void testApp::getJSON(){
 	}else{
         gotJSON = true;
         ss.str(std::string()); // clear string stream
+        
+        //save json file
+        std::string json_final_path =ofToDataPath("json/innovid_videos.json", true);
+        string command = "mkdir "+ofToDataPath("json", true);
+        ofSystemCall(command);
+        command = "curl -o "+json_final_path+ " " + url;
+        ofSystemCall(command);
         
         //update string stream w json data
         ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;

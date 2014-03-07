@@ -1,0 +1,23 @@
+{
+  "status": "OK", 
+  "videos": [
+    {
+      "filename": "1110-test-iphone.mov", 
+      "link": "https://s3.amazonaws.com/innovid_multiscreen/1110-test-iphone.mov", 
+      "timestamp": "2014-03-02 19:48:31.286000", 
+      "title": "one more test to make sure this is still working"
+    }, 
+    {
+      "filename": "test-comp.mov", 
+      "link": "https://s3.amazonaws.com/innovid_multiscreen/test-comp.mov", 
+      "timestamp": "2014-03-02 00:15:04.488000", 
+      "title": "one more time"
+    }, 
+    {
+      "filename": "1013-test-iphone.mov", 
+      "link": "https://s3.amazonaws.com/innovid_multiscreen/1013-test-iphone.mov", 
+      "timestamp": "2014-03-01 18:52:13.367000", 
+      "title": "yet another test"
+    }
+  ]
+}

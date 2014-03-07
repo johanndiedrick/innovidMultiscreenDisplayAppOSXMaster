@@ -39,6 +39,7 @@ class testApp : public ofBaseApp{
 
         //json for videos
         ofxJSONElement  response;
+        void loadJSON();
 
     
         //video player
