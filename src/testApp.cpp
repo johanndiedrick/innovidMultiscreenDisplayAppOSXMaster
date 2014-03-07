@@ -22,11 +22,12 @@ void testApp::setup(){
     CGDisplayHideCursor(NULL);
     
     gotJSON = false;
+
+    ss << "No video information received yet" << endl;
     
     //load json
     loadJSON();
     
-    ss << "No video information received yet" << endl;
 }
 
 //--------------------------------------------------------------
@@ -175,6 +176,9 @@ void testApp::getJSON(){
 
 //--------------------------------------------------------------
 void testApp::updateJSONDebug(){
+    //clear the stringstream
+    ss.str(std::string());
+    
     //update string stream w json data
     ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
     for (int i=0; i<response["videos"].size(); i++){
@@ -373,6 +377,8 @@ void testApp::guiEvent(ofxUIEventArgs &e)
 
 //--------------------------------------------------------------
 void testApp::updateDDL(){
+    //clear toggles
+    ddl->clearToggles();
     //update our dropdown box with the videos
     for (int i=0; i<response["videos"].size(); i++){
         ddl->addToggle(response["videos"][i]["filename"].asString());
