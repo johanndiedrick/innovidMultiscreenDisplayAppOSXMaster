@@ -1,19 +1,6 @@
 #include "testApp.h"
 
-string ofSystemCall(string command)
-{
-    FILE* pipe = popen(command.c_str(), "r");
-    if (!pipe) return "ERROR";
-    char buffer[128];
-    string result = "";
-    while(!feof(pipe)) {
-        if(fgets(buffer, 128, pipe) != NULL)
-            result += buffer;
-    }
-    pclose(pipe);
-    result.erase(remove(result.begin(), result.end(), '\n'), result.end());
-    return result;
-}
+#pragma mark - OF Setup, Update, Draw
 
 //--------------------------------------------------------------
 void testApp::setup(){
@@ -85,6 +72,8 @@ void testApp::draw(){
     }
 }
 
+# pragma mark - Video and OSC
+
 //--------------------------------------------------------------
 void testApp::setupOSC(){
     //set up osc and counter
@@ -99,6 +88,146 @@ void testApp::setupVideo(){
     player.loadMovie("movies/macbook.mov");
     player.play();
 }
+
+
+//--------------------------------------------------------------
+void testApp::downloadVideos(){
+    cout << "downloading videos" << endl;
+    for (int i=0; i<response["videos"].size(); i++){
+        string video_url = response["videos"][i]["link"].asString();
+        string video_filename = "movies/" + response["videos"][i]["filename"].asString();
+        string video_final_path = ofToDataPath(video_filename, true);
+        cout << video_url << endl;
+        string command = "curl -o "+video_final_path+ " " + video_url;
+        ofSystemCall(command);
+    }
+}
+
+void testApp::changeVideo(string video){
+    string video_path = "movies/" + video;
+    player.stop();
+    player.loadMovie(video_path);
+    player.play();
+}
+
+#pragma mark - JSON
+
+
+//--------------------------------------------------------------
+void testApp::loadJSON(){
+
+    //if json isn't there
+    ofFile json;
+    string json_file_path = "json/innovid_videos.json";
+    if ( !json.doesFileExist(ofToDataPath(json_file_path, true)) ) {
+
+        //download, save and load json
+        //this is done on the ui now by hitting the update json button.
+        //could do automatically, but maybe not good if you're not online
+
+        cout << "json file doesn't exist, lets try to download it" << endl;
+        
+    }else if( json.doesFileExist(ofToDataPath(json_file_path, true)) ){
+        
+        //else, load saved json
+        
+        cout << "json file exists, lets load it!!!" << endl;
+        std::string file = "json/innovid_videos.json";
+        
+        // Now parse the JSON
+        bool parsingSuccessful = response.open(file);
+        
+        if (parsingSuccessful) {
+            updateJSONDebug();
+            updateDDL();
+            /*
+            // now write pretty print
+            if(!result.save("example_output_pretty.json",true)) {
+                cout << "example_output_pretty.json written unsuccessfully." << endl;
+            } else {
+                cout << "example_output_pretty.json written successfully." << endl;
+            }
+            
+            // now write without pretty print
+            if(!result.save("example_output_fast.json",false)) {
+                cout << "example_output_pretty.json written unsuccessfully." << endl;
+            } else {
+                cout << "example_output_pretty.json written successfully." << endl;
+            }
+            */
+        } else {
+            cout  << "Failed to parse JSON" << endl;
+        }
+    }
+    
+
+}
+
+//--------------------------------------------------------------
+
+void testApp::getJSON(){
+    cout << "Getting JSON..." << endl;
+    ss.str(std::string()); // clear string stream
+    ss << "Getting JSON..." << endl;
+    
+    //get json
+    std::string url = "http://stormy-badlands-2316.herokuapp.com/data";
+    
+    if (!response.open(url)) {
+		cout  << "Failed to parse JSON\n" << endl;
+        ss.str(std::string()); // clear string stream
+        ss << "Failed to parse JSON\n" << endl;
+	}else{
+        gotJSON = true;
+        ss.str(std::string()); // clear string stream
+        
+        //save json file
+        std::string json_final_path =ofToDataPath("json/innovid_videos.json", true);
+        string command = "mkdir "+ofToDataPath("json", true);
+        ofSystemCall(command);
+        command = "curl -o "+json_final_path+ " " + url;
+        ofSystemCall(command);
+        
+        updateJSONDebug();
+        updateDDL();
+        
+    }
+
+}
+
+void testApp::updateJSONDebug(){
+    //update string stream w json data
+    ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
+    for (int i=0; i<response["videos"].size(); i++){
+        ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
+        << "\n"
+        << "title: "
+        << response["videos"][i]["title"].asString()
+        << "\n"
+        << "filename: "
+        << response["videos"][i]["filename"].asString()
+        << "\n"
+        << "timestamp: "
+        <<  response["videos"][i]["timestamp"].asString()
+        << "\n"
+        << endl;
+    }
+}
+
+#pragma mark - UI - Key Presses, drawing debug
+
+//--------------------------------------------------------------
+void testApp::keyPressed(int key){
+    if(key=='f'){
+        ofToggleFullscreen();
+    }
+    
+    if(key=='d'){
+        debug = !debug;
+        gui->toggleVisible();
+    }
+}
+
 //--------------------------------------------------------------
 
 void testApp::drawDebug(){
@@ -117,17 +246,8 @@ void testApp::drawDebug(){
     ofDrawBitmapString(ss.str(), ofGetWidth()/2, 50); // draw json on right side of screen
 }
 
-//--------------------------------------------------------------
-void testApp::keyPressed(int key){
-    if(key=='f'){
-        ofToggleFullscreen();
-    }
-    
-    if(key=='d'){
-        debug = !debug;
-        gui->toggleVisible();
-    }
-}
+#pragma mark - ofxUI
+
 //--------------------------------------------------------------
 
 void testApp::exit()
@@ -193,7 +313,7 @@ void testApp::guiEvent(ofxUIEventArgs &e)
         if(textinput->getTriggerType() == OFX_UI_TEXTINPUT_ON_ENTER)
         {
             osxIP = textinput->getTextString();
-
+            
             cout << "ON ENTER: ";
             //            ofUnregisterKeyEvents((testApp*)this);
         }
@@ -217,7 +337,7 @@ void testApp::guiEvent(ofxUIEventArgs &e)
         {
             
             iPadIP = textinput->getTextString();
-
+            
             cout << "ON ENTER: ";
             //            ofUnregisterKeyEvents((testApp*)this);
         }
@@ -273,156 +393,29 @@ void testApp::guiEvent(ofxUIEventArgs &e)
             changeVideo(selected[i]->getName());
         }
     }
-    
-    
-    
 }
 
-//--------------------------------------------------------------
-void testApp::downloadVideos(){
-    cout << "downloading videos" << endl;
+void testApp::updateDDL(){
+    //update our dropdown box with the videos
     for (int i=0; i<response["videos"].size(); i++){
-        string video_url = response["videos"][i]["link"].asString();
-        string video_filename = "movies/" + response["videos"][i]["filename"].asString();
-        string video_final_path = ofToDataPath(video_filename, true);
-        cout << video_url << endl;
-        string command = "curl -o "+video_final_path+ " " + video_url;
-        ofSystemCall(command);
+        ddl->addToggle(response["videos"][i]["filename"].asString());
     }
 }
 
 
-//--------------------------------------------------------------
-void testApp::loadJSON(){
+#pragma mark - System calls
 
-    //if json isn't there
-    ofFile json;
-    string json_file_path = "json/innovid_videos.json";
-    if ( !json.doesFileExist(ofToDataPath(json_file_path, true)) ) {
-
-        //download, save and load json
-        //this is done on the ui now by hitting the update json button.
-        //could do automatically, but maybe not good if you're not online
-
-        cout << "json file doesn't exist, lets try to download it" << endl;
-        
-    }else if( json.doesFileExist(ofToDataPath(json_file_path, true)) ){
-        
-        //else, load saved json
-        
-        cout << "json file exists, lets load it!!!" << endl;
-        std::string file = "json/innovid_videos.json";
-        
-        // Now parse the JSON
-        bool parsingSuccessful = response.open(file);
-        
-        if (parsingSuccessful) {
-            cout << "loaded json successfully" << endl;
-            cout << response.getRawString() << endl;
-            //update our dropdown box with the videos
-            
-            //update string stream w json data
-            ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
-            
-            for (int i=0; i<response["videos"].size(); i++){
-                ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
-                << "\n"
-                << "title: "
-                << response["videos"][i]["title"].asString()
-                << "\n"
-                << "filename: "
-                << response["videos"][i]["filename"].asString()
-                << "\n"
-                << "timestamp: "
-                <<  response["videos"][i]["timestamp"].asString()
-                << "\n"
-                << endl;
-            }
-
-            
-            
-            for (int i=0; i<response["videos"].size(); i++){
-                ddl->addToggle(response["videos"][i]["filename"].asString());
-            }
-            /*
-            // now write pretty print
-            if(!result.save("example_output_pretty.json",true)) {
-                cout << "example_output_pretty.json written unsuccessfully." << endl;
-            } else {
-                cout << "example_output_pretty.json written successfully." << endl;
-            }
-            
-            // now write without pretty print
-            if(!result.save("example_output_fast.json",false)) {
-                cout << "example_output_pretty.json written unsuccessfully." << endl;
-            } else {
-                cout << "example_output_pretty.json written successfully." << endl;
-            }
-            */
-        } else {
-            cout  << "Failed to parse JSON" << endl;
-        }
+string testApp::ofSystemCall(string command)
+{
+    FILE* pipe = popen(command.c_str(), "r");
+    if (!pipe) return "ERROR";
+    char buffer[128];
+    string result = "";
+    while(!feof(pipe)) {
+        if(fgets(buffer, 128, pipe) != NULL)
+            result += buffer;
     }
-    
-
-}
-
-//--------------------------------------------------------------
-
-void testApp::getJSON(){
-    cout << "Getting JSON..." << endl;
-    ss.str(std::string()); // clear string stream
-    ss << "Getting JSON..." << endl;
-    
-    //get json
-    std::string url = "http://stormy-badlands-2316.herokuapp.com/data";
-    
-    if (!response.open(url)) {
-		cout  << "Failed to parse JSON\n" << endl;
-        ss.str(std::string()); // clear string stream
-        ss << "Failed to parse JSON\n" << endl;
-	}else{
-        gotJSON = true;
-        ss.str(std::string()); // clear string stream
-        
-        //save json file
-        std::string json_final_path =ofToDataPath("json/innovid_videos.json", true);
-        string command = "mkdir "+ofToDataPath("json", true);
-        ofSystemCall(command);
-        command = "curl -o "+json_final_path+ " " + url;
-        ofSystemCall(command);
-        
-        //update string stream w json data
-        ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
-        
-        for (int i=0; i<response["videos"].size(); i++){
-            ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
-            << "\n"
-            << "title: "
-            << response["videos"][i]["title"].asString()
-            << "\n"
-            << "filename: "
-            << response["videos"][i]["filename"].asString()
-            << "\n"
-            << "timestamp: "
-            <<  response["videos"][i]["timestamp"].asString()
-            << "\n"
-            << endl;
-        }
-        cout << response.getRawString() << endl;
-        
-        //update our dropdown box with the videos
-        for (int i=0; i<response["videos"].size(); i++){
-            ddl->addToggle(response["videos"][i]["filename"].asString());
-        }
-        
-    }
-
-}
-
-void testApp::changeVideo(string video){
-    string video_path = "movies/" + video;
-    player.stop();
-    player.loadMovie(video_path);
-    player.play();
+    pclose(pipe);
+    result.erase(remove(result.begin(), result.end(), '\n'), result.end());
+    return result;
 }

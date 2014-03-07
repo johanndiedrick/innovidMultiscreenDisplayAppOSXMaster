@@ -32,6 +32,7 @@ class testApp : public ofBaseApp{
         void getJSON();
         bool gotJSON;
         std::stringstream ss;
+        void updateJSONDebug();
     
         //downloading videos
         void downloadVideos();
@@ -64,10 +65,13 @@ class testApp : public ofBaseApp{
         void exit();
         void guiEvent(ofxUIEventArgs &e);
         ofxUIDropDownList *ddl;
+        void updateDDL();
 
     
         //draw debug
         bool debug;
+    
+        string ofSystemCall(string command);
 
     
 		
