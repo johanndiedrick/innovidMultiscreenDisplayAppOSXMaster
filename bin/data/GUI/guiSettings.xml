@@ -18,3 +18,23 @@
     <Name>Sync Video</Name>
     <Value>1</Value>
 </Widget>
+<Widget>
+    <Kind>17</Kind>
+    <Name>Default Video</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>17</Kind>
+    <Name>1110-test-iphone.mov</Name>
+    <Value>1</Value>
+</Widget>
+<Widget>
+    <Kind>17</Kind>
+    <Name>test-comp.mov</Name>
+    <Value>0</Value>
+</Widget>
+<Widget>
+    <Kind>17</Kind>
+    <Name>1013-test-iphone.mov</Name>
+    <Value>0</Value>
+</Widget>

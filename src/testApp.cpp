@@ -18,6 +18,7 @@ string ofSystemCall(string command)
 //--------------------------------------------------------------
 void testApp::setup(){
     switchVideo = false;
+    
     //setup initial ip addresses
     iPadIP = "";
     iPhoneIP = "";
@@ -35,14 +36,10 @@ void testApp::setup(){
     
     CGDisplayHideCursor(NULL);
     
-    //get json
-    std::string url = "http://stormy-badlands-2316.herokuapp.com/data";
+    gotJSON = false;
     
-    if (!response.open(url)) {
-		cout  << "Failed to parse JSON\n" << endl;
-	}else{
-        cout << response.getRawString() << endl;
-    }
+    ss << "No video information received yet" << endl;
+    
     
     
 }
@@ -73,74 +70,11 @@ void testApp::update(){
     iPhoneSender.sendMessage(m); // send every frame for ipad
 	count++;
     }
-    
-    /*
-    if(switchVideo == false){
-    if (player.getPosition() == 1.0){
-        switchVideo = true;
-        //stop sending osc
-        //also toggle gui
-        sendOSC = !sendOSC;
-        
-        //stop movie
-        player.stop();
-        
-        //load in another movie
-        player.loadMovie("movies/fingers.mov");
-        
-        //play another movie
-        player.play();
-        
-        cout << "sending message to switch to fingers movie " << endl;
-        
-        //send message to other players to stop, load, and play new movie
-        ofxOscMessage n;
-        n.setAddress( "/movie/current" );
-        n.addFloatArg(2);
-        osxSender.sendMessage(n);
 
-        
-        //send sending osc
-        //also toggle gui
-        sendOSC = !sendOSC;
-    }
-    }
-    
-    if(switchVideo == true){
-        if (player.getPosition() == 1.0){
-            switchVideo = false;
-            //stop sending osc
-            //also toggle gui
-            sendOSC = !sendOSC;
-            
-            //stop movie
-            player.stop();
-            
-            //load in another movie
-            player.loadMovie("movies/1124-macbook.mov");
-            
-            //play another movie
-            player.play();
-            
-            cout << "sending message to switch to macbook movie " << endl;
-
-            //send message to other players to stop, load, and play new movie
-            ofxOscMessage o;
-            o.setAddress( "/movie/current" );
-            o.addFloatArg(1);
-            osxSender.sendMessage(o);
-            
-            //send sending osc
-            //also toggle gui
-            sendOSC = !sendOSC;
-        }
-    }
-     */
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-    
     player.draw(0,0, 1280, 800);
     
     if(debug){
@@ -150,7 +84,6 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::setupOSC(){
-    
     //set up osc and counter
     iPadSender.setup(iPadIP, PORT);
     iPhoneSender.setup(iPhoneIP, PORT);
@@ -159,7 +92,6 @@ void testApp::setupOSC(){
 
 //--------------------------------------------------------------
 void testApp::setupVideo(){
-    
     //load movie and start playing
     player.loadMovie("movies/macbook.mov");
     player.play();
@@ -167,7 +99,6 @@ void testApp::setupVideo(){
 //--------------------------------------------------------------
 
 void testApp::drawDebug(){
-    
     //show cursor
     CGDisplayShowCursor(NULL);
     
@@ -180,37 +111,11 @@ void testApp::drawDebug(){
     ofDrawBitmapString("iPad IP: " + iPadIP ,50,130);
     ofDrawBitmapString("Currently playing: " + player.getMoviePath() ,50,150);
     ofDrawBitmapString("Sending OSC?: " + ofToString(sendOSC) ,50,170);
-    
-    //draw json shit to the screen
-    std::stringstream ss;
-    
-    ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
-    
-    for (int i=0; i<response["videos"].size(); i++){
-        ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
-        << "\n"
-        << "title: "
-        << response["videos"][i]["title"].asString()
-        << "\n"
-        << "filename: "
-        << response["videos"][i]["filename"].asString()
-        << "\n"
-        << "timestamp: "
-        <<  response["videos"][i]["timestamp"].asString()
-        << "\n"
-        << endl;
-    }
-    
-    ofDrawBitmapString(ss.str(), ofGetWidth()/2, 50);
-
-    
-
-    
+    ofDrawBitmapString(ss.str(), ofGetWidth()/2, 50); // draw json on right side of screen
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-    
     if(key=='f'){
         ofToggleFullscreen();
     }
@@ -219,7 +124,18 @@ void testApp::keyPressed(int key){
         debug = !debug;
         gui->toggleVisible();
     }
-
+    
+    if(key=='1'){
+        ddl->addToggle("NEW TOGGLE");
+    }
+    
+    if(key=='2'){
+        ddl->removeToggle("NEW TOGGLE");
+    }
+    
+    if(key=='3'){
+        ddl->clearToggles();
+    }
 }
 //--------------------------------------------------------------
 
@@ -241,6 +157,11 @@ void testApp::setupUI()
 	gui->setWidgetFontSize(OFX_UI_FONT_MEDIUM);
     gui->addWidgetDown(new ofxUIToggle(32, 32, false, "Sync Video"));
     gui->addButton("Download videos", false, 44, 44);
+    gui->addButton("Update JSON", false, 44, 44);
+    vector<string> names;
+    names.push_back("Default Video");
+    ddl = gui->addDropDownList("SELECT A VIDEO", names);
+    ddl->setAutoClose(true);
     ofAddListener(gui->newGUIEvent, this, &testApp::guiEvent);
     gui->toggleVisible();
     gui->loadSettings("GUI/guiSettings.xml");
@@ -338,7 +259,28 @@ void testApp::guiEvent(ofxUIEventArgs &e)
             downloadVideos();
         }
         //cout << name << "\t value: " << button->getValue() << endl;
-        
+    }
+    
+    else if(name == "Update JSON")
+    {
+        ofxUIButton *button = (ofxUIButton *) e.widget;
+        //setupOSC();
+        //sendOSC = toggle->getValue();
+        if(button->getValue() == 1){
+            getJSON();
+        }
+        //cout << name << "\t value: " << button->getValue() << endl;
+    }
+    
+    else if(name == "SELECT A VIDEO")
+    {
+        ofxUIDropDownList *ddlist = (ofxUIDropDownList *) e.widget;
+        vector<ofxUIWidget *> &selected = ddlist->getSelected();
+        for(int i = 0; i < selected.size(); i++)
+        {
+            cout << "SELECTED: " << selected[i]->getName() << endl;
+            changeVideo(selected[i]->getName());
+        }
     }
     
     
@@ -348,11 +290,9 @@ void testApp::guiEvent(ofxUIEventArgs &e)
 //--------------------------------------------------------------
 void testApp::downloadVideos(){
     cout << "downloading videos" << endl;
-    //string curl_dl = ofToDataPath("curl", true);
-    
     for (int i=0; i<response["videos"].size(); i++){
         string video_url = response["videos"][i]["link"].asString();
-        string video_filename = response["videos"][i]["filename"].asString();
+        string video_filename = "movies/" + response["videos"][i]["filename"].asString();
         string video_final_path = ofToDataPath(video_filename, true);
         cout << video_url << endl;
         string command = "curl -o "+video_final_path+ " " + video_url;
@@ -360,42 +300,53 @@ void testApp::downloadVideos(){
     }
 }
 
-//--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void testApp::getJSON(){
+    cout << "Getting JSON..." << endl;
+    ss.str(std::string()); // clear string stream
+    ss << "Getting JSON..." << endl;
+    
+    //get json
+    std::string url = "http://stormy-badlands-2316.herokuapp.com/data";
+    
+    if (!response.open(url)) {
+		cout  << "Failed to parse JSON\n" << endl;
+        ss.str(std::string()); // clear string stream
+        ss << "Failed to parse JSON\n" << endl;
+	}else{
+        gotJSON = true;
+        ss.str(std::string()); // clear string stream
+        
+        //update string stream w json data
+        ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
+        
+        for (int i=0; i<response["videos"].size(); i++){
+            ss << "video " << i+ 1 // +1 for pretty, "non-coder" numbers
+            << "\n"
+            << "title: "
+            << response["videos"][i]["title"].asString()
+            << "\n"
+            << "filename: "
+            << response["videos"][i]["filename"].asString()
+            << "\n"
+            << "timestamp: "
+            <<  response["videos"][i]["timestamp"].asString()
+            << "\n"
+            << endl;
+        }
+        cout << response.getRawString() << endl;
+        
+        //update our dropdown box with the videos
+        for (int i=0; i<response["videos"].size(); i++){
+            ddl->addToggle(response["videos"][i]["filename"].asString());
+        }
+        
+    }
 
 }
 
-//--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void testApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
-
+void testApp::changeVideo(string video){
+    string video_path = "movies/" + video;
+    player.stop();
+    player.loadMovie(video_path);
+    player.play();
 }

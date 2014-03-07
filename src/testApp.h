@@ -20,24 +20,23 @@ class testApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+    
+        //video sync
         void setupOSC();
         void setupVideo();
         void drawDebug();
         void setupUI();
+        void keyPressed(int key);
+    
+        //get json
+        void getJSON();
+        bool gotJSON;
+        std::stringstream ss;
     
         //downloading videos
         void downloadVideos();
     
-		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
-    
+
         //json for videos
         ofxJSONElement  response;
 
@@ -46,6 +45,7 @@ class testApp : public ofBaseApp{
         ofVideoPlayer player;
         bool switchVideo;
         int count;
+        void changeVideo(string video);
     
         //osc sender
         ofxOscSender iPadSender;
@@ -62,6 +62,8 @@ class testApp : public ofBaseApp{
         ofxUICanvas *gui;
         void exit();
         void guiEvent(ofxUIEventArgs &e);
+        ofxUIDropDownList *ddl;
+
     
         //draw debug
         bool debug;
