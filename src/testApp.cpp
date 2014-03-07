@@ -89,12 +89,18 @@ void testApp::setupVideo(){
 void testApp::downloadVideos(){
     cout << "downloading videos" << endl;
     for (int i=0; i<response["videos"].size(); i++){
+        
+        ofFile video;
         string video_url = response["videos"][i]["link"].asString();
         string video_filename = "movies/" + response["videos"][i]["filename"].asString();
         string video_final_path = ofToDataPath(video_filename, true);
-        cout << video_url << endl;
-        string command = "curl -o "+video_final_path+ " " + video_url;
-        ofSystemCall(command);
+        
+        if (!video.doesFileExist(video_final_path)) {
+            string command = "curl -o "+video_final_path+ " " + video_url;
+            ofSystemCall(command);
+        }
+        
+
     }
 }
 
@@ -169,6 +175,7 @@ void testApp::getJSON(){
         
         updateJSONDebug();
         updateDDL();
+        downloadVideos();
         
     }
 
