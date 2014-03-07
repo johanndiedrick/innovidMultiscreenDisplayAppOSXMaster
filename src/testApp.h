@@ -4,75 +4,54 @@
 #include "ofxOsc.h"
 #include "ofxUI.h"
 #include "ofxJSONElement.h"
-
-
-
-/*
-#define HOST "169.254.113.109"
-#define HOST2 "169.254.77.75"
-#define HOST3 "169.254.147.227"
- */
 #define PORT 12345
 
 class testApp : public ofBaseApp{
 
 	public:
+        //of setup, update draw
 		void setup();
 		void update();
 		void draw();
     
-        //video sync
-        void setupOSC();
-        void setupVideo();
-        void drawDebug();
-        void setupUI();
-        void keyPressed(int key);
-    
-        //get json
-        void getJSON();
-        bool gotJSON;
-        std::stringstream ss;
-        void updateJSONDebug();
-    
-        //downloading videos
-        void downloadVideos();
-    
-
-        //json for videos
-        ofxJSONElement  response;
-        void loadJSON();
-
-    
-        //video player
+        //video and osc
         ofVideoPlayer player;
-        bool switchVideo;
         int count;
+        void setupVideo();
+        void downloadVideos();
         void changeVideo(string video);
     
-        //osc sender
         ofxOscSender iPadSender;
         ofxOscSender iPhoneSender;
         ofxOscSender osxSender;
-    
         string iPadIP;
         string iPhoneIP;
         string osxIP;
-    
         bool sendOSC;
+        void setupOSC();
     
-        //ofx ui
+        //JSON
+        ofxJSONElement response;
+        std::stringstream ss;
+        void getJSON();
+        bool gotJSON;
+        void updateJSONDebug();
+        void loadJSON();
+    
+        //UI - key presses, drawing debug
+        bool debug;
+        void drawDebug();
+        void keyPressed(int key);
+    
+        //ofxUI
         ofxUICanvas *gui;
+        ofxUIDropDownList *ddl;
+        void setupUI();
         void exit();
         void guiEvent(ofxUIEventArgs &e);
-        ofxUIDropDownList *ddl;
         void updateDDL();
-
     
-        //draw debug
-        bool debug;
-    
+        //system calls
         string ofSystemCall(string command);
-
     
-		
 };

@@ -3,9 +3,7 @@
 #pragma mark - OF Setup, Update, Draw
 
 //--------------------------------------------------------------
-void testApp::setup(){
-    switchVideo = false;
-    
+void testApp::setup(){    
     //setup initial ip addresses
     iPadIP = "";
     iPhoneIP = "";
@@ -29,9 +27,6 @@ void testApp::setup(){
     loadJSON();
     
     ss << "No video information received yet" << endl;
-    
-    
-    
 }
 
 //--------------------------------------------------------------
@@ -89,7 +84,6 @@ void testApp::setupVideo(){
     player.play();
 }
 
-
 //--------------------------------------------------------------
 void testApp::downloadVideos(){
     cout << "downloading videos" << endl;
@@ -103,6 +97,7 @@ void testApp::downloadVideos(){
     }
 }
 
+//--------------------------------------------------------------
 void testApp::changeVideo(string video){
     string video_path = "movies/" + video;
     player.stop();
@@ -111,7 +106,6 @@ void testApp::changeVideo(string video){
 }
 
 #pragma mark - JSON
-
 
 //--------------------------------------------------------------
 void testApp::loadJSON(){
@@ -140,21 +134,6 @@ void testApp::loadJSON(){
         if (parsingSuccessful) {
             updateJSONDebug();
             updateDDL();
-            /*
-            // now write pretty print
-            if(!result.save("example_output_pretty.json",true)) {
-                cout << "example_output_pretty.json written unsuccessfully." << endl;
-            } else {
-                cout << "example_output_pretty.json written successfully." << endl;
-            }
-            
-            // now write without pretty print
-            if(!result.save("example_output_fast.json",false)) {
-                cout << "example_output_pretty.json written unsuccessfully." << endl;
-            } else {
-                cout << "example_output_pretty.json written successfully." << endl;
-            }
-            */
         } else {
             cout  << "Failed to parse JSON" << endl;
         }
@@ -164,7 +143,6 @@ void testApp::loadJSON(){
 }
 
 //--------------------------------------------------------------
-
 void testApp::getJSON(){
     cout << "Getting JSON..." << endl;
     ss.str(std::string()); // clear string stream
@@ -195,6 +173,7 @@ void testApp::getJSON(){
 
 }
 
+//--------------------------------------------------------------
 void testApp::updateJSONDebug(){
     //update string stream w json data
     ss<< "number of videos in backend: " << response["videos"].size() << "\n" << endl;
@@ -229,13 +208,11 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-
 void testApp::drawDebug(){
     //show cursor
     CGDisplayShowCursor(NULL);
     
     //draw some debug shit on screen
-    
     ofDrawBitmapString("frame: " + ofToString(player.getCurrentFrame()) + "/"+ofToString(player.getTotalNumFrames()),50,50);
     ofDrawBitmapString("position: " + ofToString(player.getPosition()),50,70);
     ofDrawBitmapString("iPhone IP: " + iPhoneIP,50,90);
@@ -249,14 +226,13 @@ void testApp::drawDebug(){
 #pragma mark - ofxUI
 
 //--------------------------------------------------------------
-
 void testApp::exit()
 {
     gui->saveSettings("GUI/guiSettings.xml");
     delete gui;
 }
-//--------------------------------------------------------------
 
+//--------------------------------------------------------------
 void testApp::setupUI()
 {
 	gui = new ofxUICanvas(50, 190, 320, 320);
@@ -277,8 +253,8 @@ void testApp::setupUI()
     gui->toggleVisible();
     gui->loadSettings("GUI/guiSettings.xml");
 }
-//--------------------------------------------------------------
 
+//--------------------------------------------------------------
 void testApp::guiEvent(ofxUIEventArgs &e)
 {
     string name = e.widget->getName();
@@ -395,6 +371,7 @@ void testApp::guiEvent(ofxUIEventArgs &e)
     }
 }
 
+//--------------------------------------------------------------
 void testApp::updateDDL(){
     //update our dropdown box with the videos
     for (int i=0; i<response["videos"].size(); i++){
@@ -405,6 +382,7 @@ void testApp::updateDDL(){
 
 #pragma mark - System calls
 
+//--------------------------------------------------------------
 string testApp::ofSystemCall(string command)
 {
     FILE* pipe = popen(command.c_str(), "r");
